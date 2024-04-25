@@ -1,0 +1,15 @@
+# ninja log v5
+1	44	1714069280943678603	CMakeFiles/C_Fundamentals.dir/src/imc.c.o	9ce24e9d3b8ecc2f
+1	23	1714069419590819471	build.ninja	818d17fe0e7ed4c3
+1	50	1714069317337532919	C_Fundamentals	45a707ba60fa81e2
+1	34	1714069280931677994	CMakeFiles/C_Fundamentals.dir/main.c.o	1830f3afa84ed905
+1	25	1714069419590819471	build.ninja	818d17fe0e7ed4c3
+0	24	1714069419622821140	CMakeFiles/C_Fundamentals.dir/main.c.o	1830f3afa84ed905
+1	44	1714069419642822183	CMakeFiles/C_Fundamentals.dir/src/imc.c.o	9ce24e9d3b8ecc2f
+44	88	1714069419686824478	C_Fundamentals	45a707ba60fa81e2
+2	112	1714071707511001653	CMakeFiles/C_Fundamentals.dir/main.c.o	1830f3afa84ed905
+2	112	1714071707511001653	CMakeFiles/C_Fundamentals.dir/src/imc.c.o	9ce24e9d3b8ecc2f
+112	168	1714071707566999500	C_Fundamentals	45a707ba60fa81e2
+1	45	1714072572845128538	CMakeFiles/C_Fundamentals.dir/main.c.o	1830f3afa84ed905
+2	57	1714072572857128762	CMakeFiles/C_Fundamentals.dir/src/imc.c.o	9ce24e9d3b8ecc2f
+57	123	1714072572925130034	C_Fundamentals	45a707ba60fa81e2
