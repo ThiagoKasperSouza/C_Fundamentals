@@ -4,12 +4,29 @@
 * Created by Thiago Kasper de Souza on 25/04/24.
 */
 
-#include "./lib/imc.h"
+#include "../include/imc.h"
 #include <math.h>
 #include <stdio.h>
+#include <stdlib.h>
+
+
+void pegaValoresImc()
+{
+    char peso[10], altura[10];
+    printf("Digite um numero: ");
+    scanf("%s", &peso);
+    printf("%s, %f", peso, atof(peso));
+    printf("Digite outro numero: ");
+    scanf("%f", &altura);
+
+    printf("%.2f, %.2f", peso, altura);
+}
+
+
+
 
 void calcular_imc(float peso, float altura) {
-    float resultado = peso / pow(altura,2);
+    float resultado = peso / pow((altura/100),2);
     printf("Seu IMC é %.2f\n", resultado);
     diagnostico_imc(resultado);
 }

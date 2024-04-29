@@ -6,8 +6,9 @@
 
 
 #ifndef IMC_H
-#define IMC_H
+#define IMC_H 
 
+void pegaValoresImc();
 void calcular_imc(float peso, float altura);
 void diagnostico_imc(float resultado);
 

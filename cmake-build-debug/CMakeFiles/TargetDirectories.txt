@@ -1,3 +1,0 @@
-/home/thiago/Projetos/C_Fundamentals/cmake-build-debug/CMakeFiles/C_Fundamentals.dir
-/home/thiago/Projetos/C_Fundamentals/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/thiago/Projetos/C_Fundamentals/cmake-build-debug/CMakeFiles/rebuild_cache.dir
