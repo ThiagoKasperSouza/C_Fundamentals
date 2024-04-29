@@ -1,12 +1,25 @@
-/* Copyright 2024 Thiago Kasper de Souza.  All rights reserved.
-* Use of this source code is governed by a MIT style
-* license that can be found in the LICENSE file.
-* Created by Thiago Kasper de Souza on 25/04/24.
-*/
-#include "src/lib/imc.h"
 
-int main(void)
-{
-    calcular_imc(80,1.8);
-    return 0;
+#include "src/imc.c"
+
+
+int main() {
+  ListaAluno *listaAlunos = lerCSVParaLista("./imc_data.csv");
+  if (listaAlunos == NULL) {
+    return 1;
+  }
+
+  // Opcional: Imprima a lista
+  imprimirLista(listaAlunos);
+
+  // Utilize a listaAlunos para acessar os dados dos alunos
+
+  // Libere a memória alocada
+  ListaAluno *aux;
+  while (listaAlunos != NULL) {
+    aux = listaAlunos;
+    listaAlunos = listaAlunos->proximo;
+    free(aux);
+  }
+
+  return 0;
 }
