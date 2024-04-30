@@ -32,5 +32,5 @@ void diagnostico_imc(float resultado);
 FILE *abrirArquivo(char *nomeArquivo);
 ListaAluno *lerCSVParaLista(char *nomeArquivo);
 void imprimirLista(ListaAluno *lista);
-
+void clearHeap(ListaAluno *listaAlunos);
 #endif //IMC_H

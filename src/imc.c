@@ -33,6 +33,8 @@ FILE *abrirArquivo(char *nomeArquivo) {
 ListaAluno *lerCSVParaLista(char *nomeArquivo) {
   FILE *arquivo;
   char linha[100];
+
+  //manipulação da linkedList
   ListaAluno *inicioLista = NULL;
   ListaAluno *listaAtual = NULL;
 
@@ -41,6 +43,8 @@ ListaAluno *lerCSVParaLista(char *nomeArquivo) {
   // Ignora a primeira linha (cabeçalho)
   fgets(linha, sizeof(linha), arquivo);
 
+  //Loop que percorre cada linha do arquivo 
+  //(repete comando de antes pq retorna false qnd n tem mais nd)
   while (fgets(linha, sizeof(linha), arquivo)) {
     char *nome, *pesoStr, *alturaStr;
     ListaAluno *novoAluno;
@@ -69,8 +73,11 @@ ListaAluno *lerCSVParaLista(char *nomeArquivo) {
     novoAluno->aluno.imc = calcular_imc(novoAluno->aluno);
 
     // Insere o novo aluno no início da lista
+    // Vai usar conceito LIFO
+    // https://www.youtube.com/watch?v=dti0F7w3yOQ
     novoAluno->proximo = inicioLista;
     inicioLista = novoAluno;
+    //  Bar->Foo->Thiago
 
     // Atualiza o ponteiro para o último elemento da lista
     if (listaAtual == NULL) {
@@ -92,4 +99,13 @@ void imprimirLista(ListaAluno *lista) {
     diagnostico_imc(lista->aluno.imc);
     lista = lista->proximo;
   }
+}
+
+void clearHeap(ListaAluno *listaAlunos) {
+    // Libere a memória alocada
+    while (listaAlunos != NULL) {
+    listaAlunos = listaAlunos->proximo;
+    }
+    free(listaAlunos);
+    listaAlunos = NULL;
 }
