@@ -1,15 +1,17 @@
-C Fundamentals
-
+# C Fundamentals
 Autor: Thiago Kasper de Souza, 2024.
 
-Dependências:
+## Dependências:
 
-C instalado
+- C instalado
 
-
+```bash
 sudo apt-get install build-essential
+```
 
-Para compilar:
+## Para compilar:
+
+```bash
 gcc -o out.exe main.c && ./out.exe
-
+```
 
